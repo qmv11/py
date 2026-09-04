@@ -1,0 +1,38 @@
+print("Bai 4.1\n")
+toa_do = (3, 5)
+print(toa_do, type(toa_do))
+
+print("\nBai 4.2:\n")
+x,y = toa_do
+print("x =", x, "- y =", y)
+
+#Doi gia tri 2 bien bang unpacking(khong can bien tam)
+a, b = 10, 20
+a, b = b, a
+print("a =", a, "- b =", b)
+
+print("\nBai 4.3\n")
+c, d = 17, 5
+thuong_du = divmod(c, d)    #divmod tra ve mot tuple (thuong, du)
+thuong, du = thuong_du  #unpacking ket qua
+print(f"{c} chia {d} duoc thuong {thuong}, du {du}")
+
+print("\nBai 5:\n")
+import math
+
+diem_a = (2, 3)
+diem_b = (7, 8)
+
+xa, ya = diem_a
+xb, yb = diem_b
+
+khoang_cach = math.sqrt((xb-xa) ** 2 +(yb-ya) **2)
+print(f"Khoang cach giua {diem_a} va {diem_b} la: {round(khoang_cach, 2)}")
+
+print("\nYeu cau:\n")
+cac_diem = [(0, 0), (3, 4), (6, 8)]
+x0, y0 = cac_diem[0]
+for diem in cac_diem[1:3]:
+    x, y = diem
+    k_c = math.sqrt((x-x0) ** 2 + (y-y0) ** 2)
+    print("Khoang cach giua", diem, "va", cac_diem[0], "la:", round(k_c, 2))
