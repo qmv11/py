@@ -1,0 +1,70 @@
+#Bai 1.1
+print("Bai 1.1:\n")
+tuoi = 20
+if tuoi >= 18:
+    print("Da du tuoi truong thanh")
+
+if tuoi >= 18:
+    print("Duoc phep dang ky xe may")
+else:
+    print("Chua du tuoi")
+
+print("\nBai 1.2:\n")
+diem = 7.2
+if diem >= 8.0:
+    print("Xep loai: Gioi")
+elif diem >= 6.5:
+    print("Xep loai: Kha")
+elif diem >=5.0:
+    print("Xep loai: Trung binh")
+else:
+    print("Xep loai: Yeu")
+
+print("\nBai 1.3\n")
+tuoi = 17
+co_gp = False
+
+if tuoi >=18:
+    if co_gp:
+        print("Duoc phep lai xe")
+    else:
+        print("Du tuoi nhung chua co giay phep")
+else:
+    print("Chua du tuoi lai xe")
+
+print("\nBai 1.4:\n")
+ket_qua = "Dat" if diem >= 5.0 else "Khong dat"
+print(ket_qua)
+
+so = -7
+n_abs = so if so >= 0 else -so
+print(n_abs)
+
+print("\nBai 2.1:\n")
+ho_ten = "Nguyen Van A"
+diem_toan, diem_ly, diem_hoa = 8.0, 7.5, 9.0
+
+dtb = round((diem_toan + diem_ly + diem_hoa) / 3, 2)
+if dtb >= 8.0:
+    xep_loai = "Gioi"
+elif dtb >= 6.5:
+    xep_loai = "Kha"
+elif dtb >= 5.0:
+    xep_loai = "Trung binh"
+else:
+    xep_loai = "Yeu"
+
+print(f"{ho_ten} - DTB: {dtb} - Xep loai: {xep_loai}")
+print("\nBai 2.2:\n")
+
+a = float(input("Nhap so thu nhat: "))
+b = float(input("Nhap so thu hai: "))
+c = float(input("Nhap so thu ba: "))
+if a >= b and a >= c:
+ lon_nhat = a
+elif b >= a and b >= c:
+ lon_nhat = b
+else:
+ lon_nhat = c
+ 
+print("So lon nhat la:", lon_nhat)
