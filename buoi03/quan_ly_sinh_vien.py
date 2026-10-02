@@ -1,4 +1,4 @@
-danh_sach_sv = [(8.5, "An"), (7.0, "Binh"), (9.2, "Chi"), (6.5, "Dung")]
+danh_sach_sv = [(8.5, "An"), (7.0, "Binh"), (9.2, "Chi"), (6.5, "Dung")] #tuple
 # Them sinh vien moi
 danh_sach_sv.append((8.0, "Em"))
 # Xoa mot sinh vien (biet chinh xac ca diem va ten)
